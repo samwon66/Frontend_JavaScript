@@ -1,10 +1,10 @@
 document.querySelector('#button').addEventListener('click', BishBosh);
 
 function BishBosh() {
-    let numb1 = parseInt(document.getElementById('divNumb1').value);
-    let numb2 = parseInt(document.getElementById('divNumb2').value);
-    let end = parseInt(document.getElementById('loopEnd').value);
-    let output = document.getElementById('result');
+    let numb1 = parseInt(document.querySelector('#divNumb1').value);
+    let numb2 = parseInt(document.querySelector('#divNumb2').value);
+    let end = parseInt(document.querySelector('#loopEnd').value);
+    let output = document.querySelector('#result');
 
         for ( let i = 1 ; i <= end; i++)
         {
