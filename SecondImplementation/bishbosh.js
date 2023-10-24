@@ -1,33 +1,33 @@
 document.querySelector('#button').addEventListener('click', BishBosh);
 
 function BishBosh() {
-    let loopEnd = parseInt(document.getElementById('#loopEnd').value);
-    let divNumb1 = parseInt(document.getElementById('#divNumb1').value);
-    let divNumb2 = parseInt(document.getElementById('#divNumb2').value);
-    let result = document.getElementById('#result');
+    let numb1 = parseInt(document.getElementById('divNumb1').value);
+    let numb2 = parseInt(document.getElementById('divNumb2').value);
+    let end = parseInt(document.getElementById('loopEnd').value);
+    let output = document.getElementById('result');
 
-        for ( let i = 1 ; i <= loopEnd; i++)
+        for ( let i = 1 ; i <= end; i++)
         {
             var elem = document.createElement('p');
-            if (i % divNumb1 === 0 && i % divNumb2 === 0)
+            if (i % numb1 === 0 && i % numb2 === 0)
             {
                 elem.innerHTML = 'Bish-Bosh';
-                result.appendChild(elem);
+                output.appendChild(elem);
             }
-            else if (i % divNumb1 === 0) 
+            else if (i % numb1 === 0) 
             {
                 elem.innerHTML ='Bish';
-                result.appendChild(elem);
+                output.appendChild(elem);
             }
-            else if (i % divNumb2 === 0)
+            else if (i % numb2 === 0)
             {
                 elem.innerHTML = 'Bosh';
-                result.appendChild(elem);
+                output.appendChild(elem);
             }
             else 
             {
                 elem.innerHTML = `${i},`;
-                result.appendChild(elem);
+                output.appendChild(elem);
             }
         } 
         
