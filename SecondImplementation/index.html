@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Implementation of Bish Bosh</title>
+
+    <link rel="stylesheet" href="/SecondImplementation/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Bish-Bosh 2.0</h1>
+        </div>
+    </header>
+    <div class="container">
+        <p id="bishboshText">
+            Bish-Bosh listar alla tal mellan ett intervall som användaren anger, men vissa undantag:
+            Om talet är jämt delbart med DivNumb 1 listas 'Bish' istället för talet. 
+            Om talet är jämt delbart med DivNumb 2 listas 'Bosh' istället för talet.
+            Om talet är delbart med både DivNumb 1 och 2 listas 'Bish-Bosh' istället för talet.
+        </p>
+        
+        <div class="fields">
+            <label for="loopEnd">Sluttalet:</label>
+            <input type="number" id="loopEnd"><br><br>
+            <label for="divNumb1">Divisionstal 1:</label>
+            <input type="number" id="divNumb1"><br><br>
+            <label for="divNumb2">Divisionstal 2:</label>
+            <input type="number" id="divNumb2"><br><br>
+        </div>
+            <button type="button" id="button" value="click">Tryck här</button>
+            
+            <div id="result"></div>
+        
+        
+    </div>
+    
+    <footer>
+        <div>
+            <p>&copy; Sammy Wong 2023</p>
+        </div>
+    </footer>
+
+    <script src="/SecondImplementation/bishbosh.js"></script>
+    
+</body>
+</html>

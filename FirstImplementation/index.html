@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Implementation of Bish-Bosh</title>
+</head>
+<body>
+
+    <script>
+        const loopEnd = 100;
+        const divNumb1 = 3;
+        const divNumb2 = 4;
+
+        for ( let i = 1 ; i <= loopEnd; i++)
+        {
+            if (i % divNumb1 === 0 && i % divNumb2 === 0)
+                console.log('Bish-Bosh');
+            else if (i % divNumb1 === 0)
+                console.log('Bish');
+            else if (i % divNumb2 === 0)
+                console.log('Bush');
+            else 
+                console.log(i);
+        }
+    </script>
+    
+</body>
+</html>
